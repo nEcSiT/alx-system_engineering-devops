@@ -1,0 +1,11 @@
+#!/bin/bash
+
+acrostic=$1
+IFS=$'\n'
+
+for line in $acrostic; do
+  first_letter=${line:0:1}
+  echo -n "$first_letter"
+done
+
+echo
